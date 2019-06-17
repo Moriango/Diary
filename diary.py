@@ -16,12 +16,12 @@ class Entry(Model):
         database = db
 
 def initialize():
-    """create the database and the table if they don't exits"""
+    """Create the database and the table if they don't exits"""
     db.connect()
     db.create_tables([Entry], safe=True)
 
 def menu_loop():
-    """show the menu"""
+    """Show the menu"""
     choice = None
 
     while choice != 'q':
